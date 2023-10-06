@@ -1,0 +1,30 @@
+// ==============================
+// Override Variables
+// 覆盖变量
+// ==============================
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('/fonts/LB-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url('/fonts/LB-italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('/fonts/LB-bold.ttf') format('truetype');
+}
+
+$heading-title-font-family: Libre Baskerville, serif, Emoji

@@ -1,0 +1,224 @@
+baseURL = 'https://www.irbash.net/'
+title = 'Blag'
+theme = 'LoveIt'
+
+# language code ["en", "zh-CN", "fr", "pl", ...]
+languageCode = 'en-us'
+# language name ["English", "简体中文", "Français", "Polski", ...]
+languageName = "English"
+# whether to include Chinese/Japanese/Korean
+hasCJKLanguage = false
+
+# default amount of posts in each pages
+paginate = 12
+# copyright description used only for seo schema
+#copyright = ""
+
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+enableGitInfo = true
+# whether to use emoji code
+enableEmoji = true
+
+[author]
+  name = "Samuel Monson"
+
+# Menu config
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[params]
+  # site default theme ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  #gitRepo = ""
+  # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+  # ["sha256", "sha384", "sha512", "md5"]
+  #fingerprint = ""
+  # LoveIt NEW | 0.2.0 date format
+  #dateFormat = "2006-01-02"
+  # website title for Open Graph and Twitter Cards
+  title = "iRBlog"
+  # website description for RSS, SEO, Open Graph and Twitter Cards
+  description = "The personal blog of Samuel Monson"
+  # website images for Open Graph and Twitter Cards
+  #images = ["/logo.png"]
+
+  # Header config
+  [params.header]
+    # desktop header mode ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # mobile header mode ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    # LoveIt NEW | 0.2.0 Header title config
+    [params.header.title]
+      # URL of the LOGO
+      #logo = ""
+      # title name
+      name = "iRBlog"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      #pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      #post = ""
+      # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
+      #typeit = false
+
+  # Footer config
+  [params.footer]
+    enable = true
+    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
+    #custom = ''
+    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
+    hugo = true
+    # LoveIt NEW | 0.2.0 whether to show copyright info
+    copyright = true
+    # LoveIt NEW | 0.2.0 whether to show the author
+    author = true
+    # Site creation time
+    since = 2023
+    # ICP info only in China (HTML format is supported)
+    #icp = ""
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  # LoveIt NEW | 0.2.0 Search config
+  [params.search]
+    enable = false # TODO: work on this
+    # type of search engine ["lunr", "algolia"]
+    type = "lunr"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # LoveIt NEW | 0.2.1 max number of results length
+    maxResultLength = 10
+    # LoveIt NEW | 0.2.3 snippet length of the result
+    snippetLength = 30
+    # LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results
+    highlightTag = "em"
+    # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+
+  # Home page config
+  [params.home]
+    # LoveIt NEW | 0.2.0 amount of RSS pages
+    #rss = 10
+    # Home page profile
+    [params.home.profile]
+      #enable = true
+      # Gravatar Email for preferred avatar in home page
+      #gravatarEmail = ""
+      # URL of avatar shown in home page
+      #avatarURL = "/images/avatar.png"
+      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+      #title = ""
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "M-x website"
+      # whether to use typeit animation for subtitle
+      #typeit = true
+      # whether to show social links
+      #social = true
+      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+      #disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      #enable = true
+      # special amount of posts in each home posts page
+      #paginate = 6
+
+
+  # Social config about the author
+  [params.social]
+    GitHub = "scrufulufugus"
+    Linkedin = "scrufulufugus"
+    #Gitlab = ""
+    Mastodon = "https://fosstodon.org/@scrufulufugus"
+    #Gitea = ""
+    #Matrix = ""
+    #Email = "xxxx@xxxx.com"
+    RSS = true
+
+  # LoveIt CHANGED | 0.2.0 Page global config
+  [params.page]
+    # LoveIt NEW | 0.2.0 whether to hide a page from home page
+    #hiddenFromHomePage = false
+    # LoveIt NEW | 0.2.0 whether to hide a page from search results
+    #hiddenFromSearch = false
+    # LoveIt NEW | 0.2.0 whether to enable twemoji
+    #twemoji = false
+    # whether to enable lightgallery
+    #lightgallery = false
+    # LoveIt NEW | 0.2.0 whether to enable the ruby extended syntax
+    #ruby = true
+    # LoveIt NEW | 0.2.0 whether to enable the fraction extended syntax
+    #fraction = true
+    # LoveIt NEW | 0.2.0 whether to enable the fontawesome extended syntax
+    #fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = true
+    # LoveIt NEW | 0.2.4 whether to show the full text content in RSS
+    #rssFullText = false
+    # LoveIt NEW | 0.2.0 Table of the contents config
+    [params.page.toc]
+      # whether to enable the table of the contents
+      enable = true
+      # LoveIt NEW | 0.2.9 whether to keep the static table of the contents in front of the post
+      #keepStatic = false
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      auto = true
+    # LoveIt CHANGED | 0.2.0 KaTeX mathematical formulas
+    [params.page.math]
+      enable = true
+      # LoveIt CHANGED | 0.2.11 default inline delimiter is $ ... $ and \( ... \)
+      #inlineLeftDelimiter = ""
+      #inlineRightDelimiter = ""
+      # LoveIt CHANGED | 0.2.11 default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
+      #blockLeftDelimiter = ""
+      #blockRightDelimiter = ""
+      # KaTeX extension copy_tex
+      copyTex = true
+      # KaTeX extension mhchem
+      mhchem = true
+    # LoveIt NEW | 0.2.0 Code config
+    [params.page.code]
+      # whether to show the copy button of the code block
+      copy = true
+      # the maximum number of lines of displayed code by default
+      maxShownLines = 50
+    # LoveIt CHANGED | 0.2.0 social share links in post page
+    [params.page.share]
+      enable = false
